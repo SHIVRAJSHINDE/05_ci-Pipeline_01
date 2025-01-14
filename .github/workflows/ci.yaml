@@ -36,4 +36,19 @@ jobs:
       run: |
         flake8 app.py
 
+  testing: 
+    runs-on: unbuntu-latest
+    
+    steps:
+      - name: code checkout # Step to checkout
+        uses: action/checkout@v3
 
+      - name: steup python
+        uses: action/setup-pythonv@2
+        with: 
+          version: '3.9'
+
+      - name: run unit test
+        run: |
+          python -m python unittest discover
+          
