@@ -3,7 +3,7 @@ name: CI
 on: 
   push: # Trigger the workflow on every push event
     branches: 
-      - main
+      - master
   pull_request:
 
 jobs:
