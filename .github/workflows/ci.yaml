@@ -37,6 +37,7 @@ jobs:
         flake8 app.py
 
   testing: 
+    needs: lingting
     runs-on: unbuntu-latest
     
     steps:
